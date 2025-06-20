@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rural Settlement Bot Status</title>
+    <link rel="stylesheet" href="https://cdn.replit.com/agent/bootstrap-agent-dark-theme.min.css">
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <div class="card">
+                    <div class="card-header">
+                        <h2 class="text-center">Rural Settlement Bot Status</h2>
+                    </div>
+                    <div class="card-body">
+                        <div class="status-container text-center">
+                            <h4>Bot Status: 
+                                <span class="badge {% if bot_status == 'Running' %}bg-success{% else %}bg-danger{% endif %}">
+                                    {{ bot_status }}
+                                </span>
+                            </h4>
+                        </div>
+                        <div class="mt-4">
+                            <h5>Available Commands:</h5>
+                            <ul class="list-group">
+                                <li class="list-group-item">/start - Start the bot</li>
+                                <li class="list-group-item">/help - Show help message</li>
+                                <li class="list-group-item">/info - Get general settlement information</li>
+                                <li class="list-group-item">/contacts - Get important contacts</li>
+                                <li class="list-group-item">/report - Report an issue</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

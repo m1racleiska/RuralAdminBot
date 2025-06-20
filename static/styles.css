@@ -1,0 +1,15 @@
+.status-container {
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.card {
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.list-group-item {
+    background-color: var(--bs-dark);
+    color: var(--bs-light);
+    border-color: var(--bs-secondary);
+}
